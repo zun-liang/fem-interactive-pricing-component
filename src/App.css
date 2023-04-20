@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: ease all .25s;
+}
+
+:root {
+  --soft-cyan: hsl(174, 77%, 80%);
+  --strong-cyan: hsl(174, 86%, 45%);
+  --light-grayish-red: hsl(14, 92%, 95%);
+  --light-red: hsl(15, 100%, 70%);
+  --pale-blue: hsl(226, 100%, 87%);
+  --white: hsl(0, 0%, 100%);
+  --very-pale-blue: hsl(230, 100%, 99%);
+  --lighter-grayish-blue: hsl(224, 65%, 95%);
+  --light-grayish-blue: hsl(223, 50%, 87%);
+  --grayish-blue: hsl(225, 20%, 60%);
+  --dark-desaturated-blue: hsl(227, 35%, 25%);
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Manrope', sans-serif;
+  color: var(--grayish-blue);
+  line-height: 2;
+}
+
+.App {
+  width: 100%;
+  min-width: 380px;
+  height: 100vh;
+  background-color: var(--very-pale-blue);
+  background-image: url(./assets/bg-pattern.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  width: 90%;
+  height: 30%;
+  background-image: url(./assets/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--dark-desaturated-blue);
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0 80px;
+  text-align: center;
+}
+
+.pricing {
+  width: 90%;
+  max-width: 550px;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.slider {
+  margin: 45px 0;
+}
+
+.price {
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.price--number {
+  color: var(--dark-desaturated-blue);
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.billing {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 25px auto;
+}
+
+.billing h4 {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.toggle {
+  width: 42px;
+  height: 22px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.toggle--on {
+  background-color: var(--strong-cyan);
+  justify-content: flex-end;
+}
+
+.toggle--off {
+  background-color: var(--light-grayish-blue);
+}
+
+.toggle:hover {
+  cursor: pointer;
+}
+
+.toggle--circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--white);
+  margin: 3px 4px;
+}
+
+.discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-red);
+  background-color: var(--light-grayish-red);
+  border-radius: 15px;
+  margin-left: -8px;
+}
+
+.mobile {
+  width: 45px;
+  height: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.desktop {
+  display: none;
+  width: 90px;
+  height: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+hr {
+  width: 100%;
+  border: .5px solid var(--lighter-grayish-blue);
+}
+
+.advantages {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.advantages img {
+  width: 11px;
+  margin-right: 20px;
+}
+
+.advantages h5 {
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2.2;
+}
+
+button {
+  width: 32%;
+  min-width: 150px;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--dark-desaturated-blue);
+  color: var(--pale-blue);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--dark-desaturated-blue);
+  background-color: var(--strong-cyan);
+}
+
+.completion {
+  width: 90%;
+  max-width: 550px;
+  min-height: 533px;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0 35px;
+}
+
+.completion--state {
+  font-size: 30px;
+  text-align: center;
+  width: 70%;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .pricing {
+    padding: 60px 0 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  h3 {
+    position: relative;
+    top: 5px;
+    right: 140px;
+  }
+
+  .slider {
+    margin: 60px 0 45px;
+  }
+
+  .price {
+    position: absolute;
+    top: 40px;
+    right: 55px;
+  }
+
+  .price--number {
+    font-size: 40px;
+  }
+
+  .billing {
+    justify-content: flex-end;
+  }
+
+  .mobile {
+    display: none;
+  }
+  
+  .desktop {
+    display: flex;
+    margin-right: 65px;
+  }
+
+  .advantages {
+    margin-right: 100px;
+  }
+
+  .advantages h5 {
+    text-align: left;
+  }
+
+  .completion {
+    min-height: 430px;
+    padding: 115px 0 50px;
+  }
+}
