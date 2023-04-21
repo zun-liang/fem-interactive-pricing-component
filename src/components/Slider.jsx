@@ -15,7 +15,7 @@ function SliderComponent(props) {
                 height: "40px",
                 marginTop: "-15px",
                 backgroundColor: "var(--strong-cyan)",
-                backgroundImage: "url(../src/assets/icon-slider.svg)",
+                backgroundImage: "url(../assets/icon-slider.svg)",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "50%", 
                 border: "none",
