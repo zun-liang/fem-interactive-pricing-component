@@ -61,7 +61,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://www.frontendmentor.io/solutions/)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/interactive-pricing-component-using-reactjs-and-vite-FjAxaypqxf)
 - Live Site URL: [here](https://zun-liang.github.io/interactive-pricing-component/)
 
 ## My process
