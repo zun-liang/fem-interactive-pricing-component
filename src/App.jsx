@@ -4,18 +4,11 @@ import Pricing from "./components/Pricing"
 import Completion from "./components/Completion"
 import './App.css'
 
-function App() {
+const App = () => {
   const [toggle, setToggle] = useState(true)
-
-  function handleToggle() {
-    setToggle(prev => !prev)
-  }
-
+  const handleToggle = () => setToggle(prev => !prev)
   const [buttonOption, setButtonOption] = useState(true)
-
-  function handleButtonOption() {
-    setButtonOption(prev => !prev)
-  }
+  const handleButtonOption = () => setButtonOption(prev => !prev)
   
   return (
     <div className="App">

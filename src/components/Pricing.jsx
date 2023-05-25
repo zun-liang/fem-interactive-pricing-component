@@ -2,12 +2,12 @@ import { useState } from "react"
 import SliderComponent from "./Slider"
 import IconCheck from "../assets/icon-check.svg"
 
-function Pricing(props) {
+const Pricing = props => {
     const [pageviews, setPageviews] = useState("100k")
     const [price, setPrice] = useState(16)
     const [sliderValue, setSliderValue] = useState(50)
     
-    function handleChange(value) {
+    const handleChange = value => {
         setSliderValue(value)
         if (value === 0) {
             setPrice(8)
