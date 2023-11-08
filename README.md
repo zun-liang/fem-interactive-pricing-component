@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive pricing component solution
 
-This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -86,5 +86,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Zun Liang](https://zun-liang.github.io/)
+- Website - [Zun Liang](https://zunldev.com/)
+- GitHub - [@zun-liang](https://github.com/zun-liang)
 - Frontend Mentor - [@zun-liang](https://www.frontendmentor.io/profile/zun-liang)
+- freeCodeCamp - [@zun-liang](https://www.freecodecamp.org/zun-liang)
